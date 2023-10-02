@@ -1,0 +1,47 @@
+@import "../cssConfig/mixins.scss";
+
+
+.hero-Container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A4A3FF;
+    border-radius: 0 0 8rem 0;
+    flex-direction: column-reverse;
+    margin-top: -1px;
+
+    .hero-left{
+        p{
+            margin: -33px 12px 12px 12px;
+            @include md{
+                margin: -160px 54px 59px -225px;
+                font-size: 23px;
+                overflow-wrap: break-word;
+            }
+        }
+        button{
+            width: 139px;
+            height: 29px;
+            font-size: 1.1em;
+            flex-shrink: 0;
+            margin-left:10px ;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color:#6370FF;
+            color: azure;
+        }
+
+    }
+    .hero-right{
+        img{
+            height: 13em;
+            @include md{
+                margin-left: 55em;
+                height: 19em;
+            }
+            
+        }
+    }
+
+}
